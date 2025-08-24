@@ -1,0 +1,187 @@
+/* =======================
+   Général
+======================= */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* =======================
+   Header
+======================= */
+/* Header */
+.header {
+  background-color: rgba(0, 51, 102, 0.9);
+  backdrop-filter: blur(6px);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo img {
+  height: 50px;
+}
+
+/* =======================
+   Navigation
+======================= */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f1c40f;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+/* =======================
+   Main
+======================= */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #003366;
+}
+
+/* =======================
+   Section activité
+======================= */
+.activite {
+  background: white;
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.activite:hover {
+  transform: translateY(-5px);
+}
+
+.activite h2 {
+  color: #003366;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.activite p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* =======================
+   Images de contenu
+======================= */
+.activite img,
+.img-entree {
+  display: block;
+  margin: 20px auto 0;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.activite img:hover,
+.img-entree:hover {
+  transform: scale(1.03);
+}
+
+/* =======================
+   Responsive
+======================= */
+@media (max-width: 1024px) {
+  main {
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .activite h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .activite h2 {
+    font-size: 20px;
+  }
+
+  .activite img,
+  .img-entree {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* Footer global */
+.footer {
+  background-color: #003366; /* Bleu foncé comme image */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Optional: si tu veux shadow léger */
+.footer {
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+}

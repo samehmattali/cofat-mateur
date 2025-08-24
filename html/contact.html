@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact - Cofat</title>
+  <link rel="stylesheet" href="stylecontact.css" />
+</head>
+<body>
+  <header class="header">
+  <div class="logo">
+    <a href="index.html">
+      <img src="OIP-removebg-preview.png" alt="Logo Cofat" />
+    </a>
+  </div>
+  <nav class="nav">
+    <ul>
+      <li><a href="apropos.html">À propos de nous</a></li>
+      <li><a href="activites.html">Nos activités</a></li>
+      <li><a href="clients.html">Nos clients</a></li>
+      <li><a href="recrutement.html">Recrutement</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+
+<main>
+  <h1>Contactez-nous</h1>
+  <p>Voici les informations pour nous contacter :</p>
+  <ul>
+    <li>Téléphone: +216 72 112 000</li>
+    <li>Email: faouzi.elloumi@cofat.com</li>
+    <li>Adresse: Zone.Industriel. - 7030 - MATEUR</li>
+  </ul>
+  <section class="contact-form">
+      <form action="submit_form.php" method="POST">
+        <label for="name">Nom et prénom* :</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+
+        <label for="email">E-Mail* :</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="phone">Téléphone :</label><br />
+        <input type="tel" id="phone" name="phone" /><br /><br />
+
+        <label for="message">Comment pouvons-nous vous aider ?</label><br />
+        <textarea id="message" name="message" rows="5" placeholder="Votre message ici..."></textarea><br /><br />
+
+        <input type="checkbox" id="privacy" name="privacy" required />
+        <label for="privacy">J’ai lu la politique de confidentialité et je l’accepte.</label><br /><br />
+
+        <button type="submit">Envoyer</button>
+      </form>
+  </section>
+</main>
+<footer class="footer">
+  © 2025 Cofat Mateur. Tous droits réservés.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ededef;
+}
+
+/* Header */
+.header {
+  background-color: #003366;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f1c40f;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+
+
+/* Main landing */
+.landing-page {
+  height: calc(100vh - 70px); /* full screen minus header */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../adem.jpg') no-repeat center center/cover;
+  text-align: center;
+  color: rgb(245, 238, 238);
+  padding: 0 20px;
+}
+
+/* Landing heading */
+.landing-page h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+/* Button */
+.btn-welcome {
+  background-color: #0077cc;
+  color: rgb(163, 15, 15);
+  padding: 15px 40px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.btn-welcome:hover {
+  background-color: #005fa3;
+}
+.image-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.image-container h3 {
+  margin-bottom: 8px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.img-entree {
+  width: 70%;        /* تصغير الصورة */
+  max-width: 500px;  /* أقصى عرض */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+

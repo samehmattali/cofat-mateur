@@ -1,0 +1,207 @@
+/* Général */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: rgba(0, 51, 102, 0.9);
+  backdrop-filter: blur(6px);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo img {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f1c40f;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #f1c40f;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+
+/* Main */
+.recrutement-section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.recrutement-section h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #003366;
+}
+
+.recrutement-section p {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #004080;
+}
+
+/* Liste avantages */
+.avantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: disc;
+  margin-bottom: 40px;
+  padding-left: 20px;
+}
+
+.avantages li {
+  font-size: 16px;
+  color: #003366;
+}
+
+/* Formulaire */
+.formulaire-recrutement {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.formulaire-recrutement:hover {
+  transform: translateY(-3px);
+}
+
+.formulaire-recrutement fieldset {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.formulaire-recrutement legend {
+  font-weight: bold;
+  color: #003366;
+}
+
+.formulaire-recrutement label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.formulaire-recrutement input,
+.formulaire-recrutement textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.formulaire-recrutement input:focus,
+.formulaire-recrutement textarea:focus {
+  outline: 2px solid #004080;
+}
+
+/* Bouton */
+.formulaire-recrutement button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+.formulaire-recrutement button:hover {
+  background-color: #0066cc;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #004080;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .recrutement-section {
+    padding: 0 15px;
+  }
+
+  .recrutement-section h1 {
+    font-size: 28px;
+  }
+
+  .avantages li {
+    font-size: 15px;
+  }
+}
+

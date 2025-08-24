@@ -1,0 +1,172 @@
+/* Conteneur principal contact */
+main {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Titres */
+main h1 {
+  color: #004080;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Section infos contact */
+.contact-info h2 {
+  color: #004080;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.contact-info p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* Formulaire */
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.5px solid #171773;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form input[type="tel"]:focus,
+.contact-form textarea:focus {
+  border-color: #0070c0;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Checkbox et label */
+.contact-form input[type="checkbox"] {
+  transform: scale(1.1);
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.contact-form label[for="privacy"] {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
+/* Bouton */
+.contact-form button {
+  margin-top: 25px;
+  padding: 12px 28px;
+  background-color: #004080;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0066cc;
+}
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* Body font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f5;
+}
+/* Body font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f5;
+}
+
+.header {
+  background-color: #003366;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: rgb(246, 232, 232);
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f1c40f;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+}
+
+.nav a:hover::after,
+.nav a.active::after {
+  width: 100%;
+}
+/* Footer global */
+.footer {
+  background-color: #003366; /* Bleu foncé comme image */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Optional: si tu veux shadow léger */
+.footer {
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+}
